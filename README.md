@@ -21,7 +21,7 @@ The common case for a web application queue is to send emails: you don't want th
 
 This queue app is a simple, up and running queueing solution.  The more complex distributed queues can wait until the website has a lot of traffic, and the scalability is really required.
 
-## Overiew
+## Overview
 
 
 In a nutshell, a python SocketServer runs in the background, and listens to a tcp socket. SocketServer gets the request to run a task from it's socket, puts the task on a Queue. A Worker thread picks tasks from this Queue, and runs the tasks one by one.
