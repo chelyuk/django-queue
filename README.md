@@ -6,7 +6,7 @@
 [Overview](#overview)    
 [Install](#install)     
 [Settings](#settings)     
-[Run the Tasks Server](#run-the-tasks-server)     
+[Run the Tasks Queue Server](#run-the-tasks-queue-server)     
 [Persistency](#persistency)     
 [Failed Tasks](#failed-tasks)     
 [Run the Tasks Queue on Another Server](#run-the-tasks-queue-on-another-server)     
@@ -21,7 +21,7 @@ The common case for a web application queue is to send emails: you don't want th
 
 This queue app is a simple, up and running queueing solution.  The more complex distributed queues can wait until the website has a lot of traffic, and the scalability is really required.
 
-## Oveview
+## Overiew
 
 
 In a nutshell, a python SocketServer runs in the background, and listens to a tcp socket. SocketServer gets the request to run a task from it's socket, puts the task on a Queue. A Worker thread picks tasks from this Queue, and runs the tasks one by one.
@@ -93,7 +93,7 @@ The port that SocketServer listens to. The default is 8002.
 	
 
 
-## Run the Tasks Server
+## Run the Tasks Queue Server
 
 
 ###Start the Server  
